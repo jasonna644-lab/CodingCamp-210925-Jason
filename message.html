@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Us - Mini Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVZEZ6fa7bPwCI4HE5583rhd3qiFNmf6kiPg&s" alt="Logo" class="logo-img">
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="profile.html">Our Profile</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="message.html">Message Us</a>
+    </div>
+  </div>
+
+  <!-- Form -->
+  <section class="page section" id="message">
+    <h2>Message Us</h2>
+    <form id="messageForm">
+      <div class="form-group">
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tgl">Tanggal lahir :</label>
+        <input type="date" id="tgl" required>
+      </div>
+
+      <div class="form-group">
+        <label>Jenis kelamin :</label>
+        <input type="radio" name="gender" value="Laki-Laki" required> Laki-laki
+        <input type="radio" name="gender" value="Perempuan"> Perempuan
+      </div>
+
+      <div class="form-textarea">
+        <label for="pesan">Pesan :</label>
+        <textarea id="pesan" rows="5" cols="30" required></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Tabel hasil -->
+    <h3>Daftar Pesan</h3>
+    <table class="custom-table" id="messageTable">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Tanggal Lahir</th>
+          <th>Jenis Kelamin</th>
+          <th>Pesan</th>
+          <th>Profile</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data dari form akan muncul di sini -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="message.js"></script>
+
+  <script src="message.js"></script>
+
+</body>
+</html>
